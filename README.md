@@ -39,3 +39,4 @@ This project is part of a course focused on system integration and the practical
 - Explanation of BPMN flow
 - "bug" at the second use of `camunda-forms:/forms/Is-Complaint-Solvable-Form.form` at Manager Review
 - Explanation of forms
+- Implementation of EIP's (?)
