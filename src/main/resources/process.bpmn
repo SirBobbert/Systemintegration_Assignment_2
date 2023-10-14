@@ -92,7 +92,7 @@
       <bpmn:incoming>Flow_0awl3gg</bpmn:incoming>
       <bpmn:outgoing>Flow_1qg5r74</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:exclusiveGateway id="Gateway_0opjyb9">
+    <bpmn:exclusiveGateway id="Gateway_0opjyb9" name="Can the manager solve it?">
       <bpmn:incoming>Flow_1aw9ev2</bpmn:incoming>
       <bpmn:outgoing>Flow_1rk0no8</bpmn:outgoing>
       <bpmn:outgoing>Flow_0awl3gg</bpmn:outgoing>
@@ -180,6 +180,9 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_0opjyb9_di" bpmnElement="Gateway_0opjyb9" isMarkerVisible="true">
         <dc:Bounds x="1505" y="95" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1487" y="65" width="87" height="27" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0gg5pcq_di" bpmnElement="Flow_0gg5pcq">
         <di:waypoint x="198" y="227" />
