@@ -99,7 +99,6 @@
     <bpmn:sequenceFlow id="Flow_0awl3gg" name="yes" sourceRef="Gateway_0opjyb9" targetRef="Activity_0itl4d0">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${isSolvable=="yes"}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:userTask id="Activity_0539tzu" name="Customer Support Review" camunda:formKey="camunda-forms:/forms/Is-Complaint-Sufficient-Form.form" />
     <bpmn:businessRuleTask id="Activity_0b45dgj" name="Customer Support Review" camunda:delegateExpression="#{complaintBusinessRule}">
       <bpmn:extensionElements />
       <bpmn:incoming>Flow_1nnjwl6</bpmn:incoming>
@@ -156,6 +155,12 @@
         <dc:Bounds x="1350" y="80" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_16eqfue_di" bpmnElement="Event_16eqfue">
+        <dc:Bounds x="1782" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1775" y="145" width="51" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0ojwmzb_di" bpmnElement="Activity_0ojwmzb">
         <dc:Bounds x="1350" y="290" width="100" height="80" />
         <bpmndi:BPMNLabel />
@@ -163,27 +168,17 @@
       <bpmndi:BPMNShape id="Activity_1byr8yz_di" bpmnElement="Activity_0i6emoa">
         <dc:Bounds x="930" y="290" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_07dlsp4_di" bpmnElement="Activity_0itl4d0">
-        <dc:Bounds x="1200" y="290" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0qvo4m2_di" bpmnElement="Activity_0h2v6on">
         <dc:Bounds x="1610" y="80" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_16eqfue_di" bpmnElement="Event_16eqfue">
-        <dc:Bounds x="1782" y="102" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1775" y="145" width="51" height="27" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="Activity_07dlsp4_di" bpmnElement="Activity_0itl4d0">
+        <dc:Bounds x="1200" y="290" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_0opjyb9_di" bpmnElement="Gateway_0opjyb9" isMarkerVisible="true">
         <dc:Bounds x="1505" y="95" width="50" height="50" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1487" y="65" width="87" height="27" />
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BPMNShape_0fqd1si" bpmnElement="Activity_0539tzu">
-        <dc:Bounds x="580" y="390" width="100" height="80" />
-        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_14dfzwh_di" bpmnElement="Activity_0b45dgj">
         <dc:Bounds x="580" y="187" width="100" height="80" />

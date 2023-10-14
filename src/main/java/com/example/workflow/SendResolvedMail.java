@@ -15,8 +15,8 @@ public class SendResolvedMail implements JavaDelegate {
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
         // Email sender config
-        String myEmail = "Robert.pallesen13@gmail.com";
-        String myPassword = "hmdc ykoo rfoy fbdh";
+        String myEmail = GlobalVariables.globalEmail;
+        String myPassword = GlobalVariables.globalPassword;
 
         // Email receiver config
         String emailReceiver = (String) delegateExecution.getVariable("email");
