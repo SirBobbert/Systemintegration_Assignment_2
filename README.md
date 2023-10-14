@@ -83,6 +83,9 @@ This section outlines the purpose of different forms used in the application.
 
 These forms serve specific functions within our complaint handling process, helping to assess complaint sufficiency, gather information for resolution, and collect contact details for communication. Users interact with these forms based on the status and nature of their complaints.
 
+## BPMN flow
+![process](https://github.com/SirBobbert/Systemintegration_Assignment_2/assets/76921857/3f6e2513-6aba-49cd-90d3-1c2d53bf6ddc)
+
 ## Usage
 
 1. Clone this repository.
@@ -96,7 +99,3 @@ These forms serve specific functions within our complaint handling process, help
 - Robert Pallesen
 - Mathias Brix Drejer
 - Tobias Linge Jensen
-
-## TODO
-
-- Explanation of BPMN Flow: Describe the sequence of tasks, gateways, and events in your BPMN process model.
