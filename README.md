@@ -2,7 +2,19 @@
 
 This project is part of a course focused on system integration and the practical implementation of business process modeling and automation. Our goal is to develop a system that can efficiently manage the process of organizing customer activations or handling customer complaints, using various integration patterns and good programming practices.
 
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Project Structure](#project-structure)
+- [Enterprise Integration Patterns (EIP)](#enterprise-integration-patterns-eip)
+- [Forms](#forms)
+- [BPMN Flow](#bpmn-flow)
+- [Usage](#usage)
+- [Contributors](#contributors)
+
 ## Requirements
+
+To run this project, you'll need the following software and libraries:
 
 - Java Development Kit (JDK)
 - Maven
@@ -18,13 +30,12 @@ This project is part of a course focused on system integration and the practical
 - `ComplaintBusinessRule.java`: This class implements the JavaDelegate interface and checks whether a submitted complaint is sufficient based on its character length. It sets a variable and prints a message accordingly.
 - `SendResolvedMail.java`: Responsible for sending an email to the user to notify them that their complaint has been resolved.
 - `SendSubmissionMail.java`: Handles the task of sending a confirmation email to the user who submitted the complaint.
-- `SendUnresolvedMail.java`: Sends an email if the complaint couldn't be resolved
+- `SendUnresolvedMail.java`: Sends an email if the complaint couldn't be resolved.
 - `process.bpmn`: Manages the process of sending an email if the complaint couldn't be resolved.
-## EIP (Enterprise Integration Patterns)
 
-In this project, we have implemented several aspects of Enterprise Integration Patterns (EIP) to facilitate the exchange of information and automation of business processes.
-eIP is a set of design patterns used for solving common integration challenges in enterprise applications.
-we have applied these principles in specific areas of the project:
+## Enterprise Integration Patterns (EIP)
+
+In this project, we have implemented several aspects of Enterprise Integration Patterns (EIP) to facilitate the exchange of information and automation of business processes. EIP is a set of design patterns used for solving common integration challenges in enterprise applications. We have applied these principles in specific areas of the project:
 
 ### 1. Message Channels
 
@@ -54,42 +65,43 @@ While our implementation of EIP is limited in scope, it demonstrates how these i
 
 ## Forms
 
-This section outlines the purpose of different forms used in the application.
+This section outlines the purpose of different forms used in the application:
 
 1. **Form: "Your complaint wasn't sufficient enough"**
-    - **Purpose:** To gather additional information about a complaint that was deemed insufficient.
-    - **Key Field:** `additionalInfoToComplaint`
-    - **Description:** Allows users to provide more details or context about their complaint if it was found insufficient.
+   - **Purpose**: To gather additional information about a complaint that was deemed insufficient.
+   - **Key Field**: `additionalInfoToComplaint`
+   - **Description**: Allows users to provide more details or context about their complaint if it was found insufficient.
 
 2. **Form: "Is the complaint solvable?"**
-    - **Purpose:** To collect user feedback on whether they believe their complaint is solvable.
-    - **Key Field:** `isSolvable`
-    - **Description:** Users are asked to express their opinion on the solvability of their complaint, with options for "yes" or "no."
+   - **Purpose**: To collect user feedback on whether they believe their complaint is solvable.
+   - **Key Field**: `isSolvable`
+   - **Description**: Users are asked to express their opinion on the solvability of their complaint, with options for "yes" or "no."
 
 3. **Form: "Was the complaint sufficient?"**
-    - **Purpose:** To gather user feedback on whether they found their complaint to be sufficient.
-    - **Key Field:** `sufficientComplaint`
-    - **Description:** Users are prompted to provide feedback on the sufficiency of their complaint, with options for "yes" or "no."
+   - **Purpose**: To gather user feedback on whether they found their complaint to be sufficient.
+   - **Key Field**: `sufficientComplaint`
+   - **Description**: Users are prompted to provide feedback on the sufficiency of their complaint, with options for "yes" or "no."
 
 4. **Form: "Resolve the complaint"**
-    - **Purpose:** To collect information for resolving a complaint that was deemed sufficient.
-    - **Key Field:** `resolveComplaint`
-    - **Description:** If the user's complaint is found sufficient, this form is used to gather details and steps for resolving the complaint.
+   - **Purpose**: To collect information for resolving a complaint that was deemed sufficient.
+   - **Key Field**: `resolveComplaint`
+   - **Description**: If the user's complaint is found sufficient, this form is used to gather details and steps for resolving the complaint.
 
 5. **Form: "Full name, Email, and Complaint"**
-    - **Purpose:** To gather essential information when a user submits a new complaint.
-    - **Key Fields:** `fullName`, `email`, and `complaint`
-    - **Description:** This form collects the full name and email of the complainer, along with a description of the complaint itself.
+   - **Purpose**: To gather essential information when a user submits a new complaint.
+   - **Key Fields**: `fullName`, `email`, and `complaint`
+   - **Description**: This form collects the full name and email of the complainer, along with a description of the complaint itself.
 
 These forms serve specific functions within our complaint handling process, helping to assess complaint sufficiency, gather information for resolution, and collect contact details for communication. Users interact with these forms based on the status and nature of their complaints.
 
-## BPMN flow
-![process](https://github.com/SirBobbert/Systemintegration_Assignment_2/assets/76921857/3f6e2513-6aba-49cd-90d3-1c2d53bf6ddc)
+## BPMN
+
+![Process Diagram](https://github.com/SirBobbert/Systemintegration_Assignment_2/assets/76921857/3f6e2513-6aba-49cd-90d3-1c2d53bf6ddc)
 
 ## Usage
 
 1. Clone this repository.
-2. Build the project using maven: `mvn clean install`
+2. Build the project using Maven: `mvn clean install`
 3. In GlobalVariables, enter your own email and password
 4. After the build is successful, you can run the application with the following command: `java -jar target/CamundaProject-1.0.0-SNAPSHOT.jar`
 5. Once the application is running, you can access it in a web browser at `http://localhost:8080/`
