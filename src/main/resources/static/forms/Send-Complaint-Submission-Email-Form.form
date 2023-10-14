@@ -1,0 +1,55 @@
+{
+  "components": [
+    {
+      "label": "Full name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_05i53tq",
+        "columns": null
+      },
+      "id": "Field_000dn7z",
+      "key": "fullName",
+      "description": "Full name of the complainer",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Email",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0m8b5ue",
+        "columns": null
+      },
+      "id": "Field_17i1s9r",
+      "key": "email",
+      "description": "Email of the complainer",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Complaint",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0wpuh84",
+        "columns": 16
+      },
+      "id": "Field_1bbsy8d",
+      "key": "complaint",
+      "description": "Description of the complaint",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0fbj29c",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.2"
+  },
+  "schemaVersion": 10
+}

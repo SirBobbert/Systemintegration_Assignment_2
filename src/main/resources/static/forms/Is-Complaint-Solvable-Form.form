@@ -1,0 +1,28 @@
+{
+  "components": [
+    {
+      "label": "Is the complaint solvable?",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_05i53tq",
+        "columns": null
+      },
+      "id": "Field_000dn7z",
+      "key": "isSolvable",
+      "description": "Do you think the complaint is solvable?",
+      "validate": {
+        "required": true,
+        "pattern": "yes|no"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0fbj29c",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.2"
+  },
+  "schemaVersion": 10
+}

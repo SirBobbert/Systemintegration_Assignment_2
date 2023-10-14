@@ -1,0 +1,27 @@
+{
+  "components": [
+    {
+      "label": "Your complaint wasen't sufficient enough",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0wpuh84",
+        "columns": 16
+      },
+      "id": "Field_1bbsy8d",
+      "key": "additionalInfoToComplaint",
+      "description": "Add additional information to your complaint",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0fbj29c",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.2"
+  },
+  "schemaVersion": 10
+}

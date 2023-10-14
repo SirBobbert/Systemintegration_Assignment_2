@@ -1,0 +1,27 @@
+{
+  "components": [
+    {
+      "label": "Resolve the complaint",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0wpuh84",
+        "columns": 16
+      },
+      "id": "Field_1bbsy8d",
+      "key": "resolveComplaint",
+      "description": "The complaint was sufficient, now resolve it",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0fbj29c",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.2"
+  },
+  "schemaVersion": 10
+}
