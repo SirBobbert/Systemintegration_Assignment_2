@@ -20,6 +20,7 @@ public class SendResolvedMail implements JavaDelegate {
 
         // Email receiver config
         String emailReceiver = (String) delegateExecution.getVariable("email");
+        String resolveComplaint  = (String) delegateExecution.getVariable("resolveComplaint");
 
         // Other info about complainer
         String complainerName = (String) delegateExecution.getVariable("fullName");
@@ -58,6 +59,11 @@ public class SendResolvedMail implements JavaDelegate {
             emailBody.append("We are pleased to inform you that your previously submitted complaint has been resolved to your satisfaction.\n\n");
             emailBody.append("Complaint Details:\n");
             emailBody.append(complaint).append("\n\n");
+
+            // Add information about how the complaint was resolved
+            emailBody.append("Resolution Details:\n");
+            emailBody.append(resolveComplaint).append("\n\n");
+
             emailBody.append("Our team has taken the necessary steps to address your concerns, and we believe the issue has been successfully resolved. If you have any further questions or require additional assistance, please do not hesitate to reach out to us.\n\n");
             emailBody.append("Thank you for bringing this matter to our attention, and we appreciate your understanding and patience throughout the resolution process.\n\n");
             emailBody.append("Sincerely,\n");
@@ -68,12 +74,11 @@ public class SendResolvedMail implements JavaDelegate {
 
             // Send the email
             Transport.send(message);
-
-            System.out.println("Email sent successfully.");
         } catch (MessagingException e) {
+            // Handle email sending error
             e.printStackTrace();
-            throw new RuntimeException(e);
         }
+
 
         delegateExecution.setVariable("emailSent", "true");
     }
