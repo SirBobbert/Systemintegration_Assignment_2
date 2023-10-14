@@ -9,7 +9,10 @@
       },
       "id": "Field_000dn7z",
       "key": "fullName",
-      "description": "Full name of the complainer"
+      "description": "Full name of the complainer",
+      "validate": {
+        "required": true
+      }
     },
     {
       "label": "Email",
@@ -20,7 +23,10 @@
       },
       "id": "Field_17i1s9r",
       "key": "email",
-      "description": "Email of the complainer"
+      "description": "Email of the complainer",
+      "validate": {
+        "required": true
+      }
     },
     {
       "label": "Complaint",
@@ -31,7 +37,10 @@
       },
       "id": "Field_1bbsy8d",
       "key": "complaint",
-      "description": "Description of the complaint"
+      "description": "Description of the complaint",
+      "validate": {
+        "required": true
+      }
     }
   ],
   "type": "default",

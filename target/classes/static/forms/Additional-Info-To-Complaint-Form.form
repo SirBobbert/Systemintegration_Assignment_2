@@ -9,7 +9,10 @@
       },
       "id": "Field_1bbsy8d",
       "key": "additionalInfoToComplaint",
-      "description": "Add additional information to your complaint"
+      "description": "Add additional information to your complaint",
+      "validate": {
+        "required": true
+      }
     }
   ],
   "type": "default",

@@ -9,7 +9,10 @@
       },
       "id": "Field_1bbsy8d",
       "key": "resolveComplaint",
-      "description": "The complaint was sufficient, now resolve it"
+      "description": "The complaint was sufficient, now resolve it",
+      "validate": {
+        "required": true
+      }
     }
   ],
   "type": "default",
